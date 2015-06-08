@@ -1,0 +1,60 @@
+Note : Situasi ketika kita sudah mempunyai repository di github
+
+1. Buat dulu konfigurasi akun github dengan cara :
+
+- Buat new folder dengan nama "Repository Github" di drive yang anda inginkan ( saran saya jangan di drive c ).
+- Lalu masukan ke folder dan klik kanan , lalu klik git bash.
+
+	$ git config --global user.name "Obbiechrist"
+	$ git config --global user.email "obbie.christian@gmail.com"
+	$ git config --global core.editor vim
+	$ git config --global merge.tool vimdiff
+
+- kalau ingin melihat hasilnya ketikan :
+
+	$ git config --list
+
+2. clone data dari repository github yang ada diinternet :
+
+- buka github di internet lalu login.
+- klik gambar "copy to clipboard" di area HTTPS clone url disebelah kanan kita. 
+- lalu ketikan :
+
+	$ git clone "tekan paste di CMD" maka hasilnya $ git clone https://github.com/Mikroskil/Team_IDV2.git
+
+3. Cara push data ( semua yang kita lakukan di folder yang baru kita clone ) 
+
+- sebelum push data ada baiknya dulu kita untuk mensamakan repo dilaptop dengan di github dengan cara :
+
+	$ git pull
+
+- Jika kita ingin membuat file baru ketikan :
+
+	$ vim "nama file kita" hasilnya : $ vim databaru.md
+
+- Jika kita ingin mengedit file, ketikan : 
+
+	$ vim "nama file nya" hasilnya : $ vim datasudahada.md
+
+- maka secara otomatis data kita menjadi masuk area unmodified, untuk mengecek data yang kita ubah ketikan
+
+	$ git status
+
+- untuk membuat data kita masuk ke area modified ketikan :
+
+	$ git add . / git add "nama file" misalnya : git add README.md
+
+- setelah itu check lagi data kita dengan mengetikan :
+
+	$ git status
+
+- lalu commit file kita untuk memasukan ke area staging supaya bisa di push dengan cara :
+
+	$ git commit -m "komentar anda" misal : $ git commit -m "merubah judul README.md"
+
+- lalu push data / kirim data ke repo github dengan cara :
+
+	$ git push -u origin master
+
+- jika diminta password dan username masukan password dan username anda yang di github. 
+
