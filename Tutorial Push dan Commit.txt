@@ -20,7 +20,7 @@ Note : Situasi ketika kita sudah mempunyai repository di github
 - klik gambar "copy to clipboard" di area HTTPS clone url disebelah kanan kita. 
 - lalu ketikan :
 
-	$ git clone "tekan paste di CMD" maka hasilnya $ git clone https://github.com/Mikroskil/Team_IDV2.git
+	$ git clone "tekan paste di CMD" maka hasilnya : $ git clone https://github.com/Mikroskil/Team_IDV2.git
 
 3. Cara push data ( semua yang kita lakukan di folder yang baru kita clone ) 
 
@@ -42,7 +42,7 @@ Note : Situasi ketika kita sudah mempunyai repository di github
 
 - untuk membuat data kita masuk ke area modified ketikan :
 
-	$ git add . / git add "nama file" misalnya : git add README.md
+	$ git add . ( simbol titik atau "." menandakan kita memasukan semua file yang kita modifikasi / kita ubah )/ $ git add "nama file" misalnya : $ git add README.md
 
 - setelah itu check lagi data kita dengan mengetikan :
 
