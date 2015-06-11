@@ -1,90 +1,112 @@
 doctype html
 html
   head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
     title Windows Os
-    link(rel='icon', href='image/Windows8-50.ico')
-    link(rel='stylesheet', type='text/css', href='build/build.css')
-  body
-    article
-      section
-        h2 Tutorial Install windows 8 
-        h2 menggunakan Flashdisk
-        img(src='image/usb.jpg')
-      section
-        h2 PERKENALAN WINDOWS 8
-      section
-        p(style='text-align:justify')
-          | Windows 8 adalah keluaran dari microsoft yang secara resmi di rilis pada tahun 2012 bersamaan
-          | dengan peluncuran komputer perdana yang menggunakan windows 8.
-          | Versi percobaan windows 8 berupa Consumer preview dan release preview.
-          | pada 26 juni 2013 microsoft merilis versi uji coba  windows 8.1
-        blockquote
-          | Sumber 
-          em
-            a(href='http://id.wikipedia.org/wiki/Windows_8') Wikipedia
-      section
-        h2 Touch Interaction
-        h3
-          | Powered by 
-          a(href='https://github.com/markdalgleish/bespoke-touch') bespoke-touch
-      section
-        h2 Responsive Slides
-        h3
-          | Powered by 
-          a(href='https://github.com/markdalgleish/bespoke-scale') bespoke-scale
-      section
-        h2 Bullet List
-        h3.bullet
-          | Powered by 
-          a(href='https://github.com/markdalgleish/bespoke-bullets') bespoke-bullets
-        ul
-          li Bullet 1
-          li Bullet 2
-          li Bullet 3
-      section
-        h2 Syntax Highlighting
-        h3
-          | Powered by 
-          a(href='http://twitter.com/LeaVerou') Lea Verou
-          | 's 
-          a(href='https://github.com/LeaVerou/prism') Prism
-        pre.
-      section(data-bespoke-hash='named-route')
-        h2 Named Route
-        h3
-          | Powered by 
-          a(href='https://github.com/markdalgleish/bespoke-hash') bespoke-hash
-        p
-          | Look up! This route has been named with a 
-          em 'data-bespoke-hash'
-          |  attribute.
-      section.emphatic-text(data-bespoke-backdrop='emphatic')
-        h2 Emphatic Slide!
-        h3
-          | Powered by 
-          a(href='https://github.com/markdalgleish/bespoke-backdrop') bespoke-backdrop
-      section
-        h2.bullet Just the beginning...
-        br
-        ul
-          li
-            | Edit 
-            a(href='http://jade-lang.com/') Jade
-            |  markup in 
-            em 'src/index.jade'
-          li
-            | Edit 
-            a(href='http://learnboost.github.io/stylus/') Stylus
-            |  styles in 
-            em 'src/styles/main.styl'
-          li
-            | Edit JavaScript in 
-            em 'src/scripts/main.js'
-        br
-        ul
-          li
-            strong Enjoy! :)
-            a(href='http://twitter.com/markdalgleish')  -@markdalgleish
-    script(src='build/build.js')
+    link(rel="icon", href="image/Windows8-50.ico")
+    link(rel="stylesheet", type="text/css", href="build/build.css")
+    link(rel="stylesheet", type="text/css", href="build/themes.css")
+  body.coverflow(style="background-image:url(foto/1.png)")
+    #main
+      article
+        section
+          h2 Tutorial Install windows 8 
+          img(src="image/usb.jpg", ,="", style="width:120px;height:100px; left:0%")
+        section
+          h2 PERKENALAN WINDOWS 8
+        section
+          p(style="text-align:justify")
+            | Windows 8 adalah keluaran dari microsoft yang secara resmi di rilis pada tahun 2012 bersamaan
+            | dengan peluncuran komputer perdana yang menggunakan windows 8.
+            | Versi percobaan windows 8 berupa Consumer preview dan release preview.
+            | pada 26 juni 2013 microsoft merilis versi uji coba  windows 8.1
+          blockquote
+            | Sumber
+            em
+              a(href="http://id.wikipedia.org/wiki/Windows_8") Wikipedia
+        section
+          h2(style="top:5%;") Cara Menginstall
+          h2(style="top:10%; font-size:12px")
+            | Catatan: Harap Backup dahulu isi USB flashdisk kita, karena kita akan memformatnya        kemudian.
+            br
+            | Langkah-Langkah menginstall Windows 8 Melalui USB Flashdisk:
+            h2(style="top:20%; font-size:12px")
+              ol
+                li
+                  | Colokkan USB flashdisk kita ke komputer dan backup (simpan) dahulu file2 didalamnya jika ada ditempat lain.
+                li
+                  | Klik Start -&#62; All Programs -&#62; Accessories klik kanan pada Command Prompt dan pilih Run as administrator untuk menjalankan Command Prompt dengan hak akses Administrator. Klik Yes kalo nongol jendela UAC (User Account Control.
+                li Pada Command Prompt, ketikkan perintah DISKPART dan tekan Enter
+                li
+                  | Sekarang, ketik perintah LIST DISK dan tekan Enter, untuk melihat nomor disk USB flashdisk kita yang mana, dalam tutorrial berikut USB flashdisk saya ada dinomor 1. Periksa ukuran USB flashdisk berikutnya (lih gambar) untuk memastikan nomor USB flashdisk yang akan kita pakai.
+                li
+                  | Sekarang ketikkan perintah berikut satu persatu diikuti dengan menekan tombol Enter
+                ul
+                  li Select DISK 1
+                  li Clean
+                  li Create Partition Primary
+                  li Active
+                  li  Format Fs=NTFS
+                  li Assign
+                  li Exit
+        section
+          h2 Responsive Slides
+          h3
+            | Powered by
+            a(href="https://github.com/markdalgleish/bespoke-scale") bespoke-scale
+        section
+          h2 Bullet List
+          h3.bullet
+            | Powered by
+            a(href="https://github.com/markdalgleish/bespoke-bullets") bespoke-bullets
+          ul
+            li Bullet 1
+            li Bullet 2
+            li Bullet 3
+        section
+          h2 Syntax Highlighting
+          h3
+            | Powered by
+            a(href="http://twitter.com/LeaVerou") Lea Verou
+            | "s
+            a(href="https://github.com/LeaVerou/prism") Prism
+          pre.
+            
+        section(data-bespoke-hash="named-route")
+          h2 Named Route
+          h3
+            | Powered by
+            a(href="https://github.com/markdalgleish/bespoke-hash") bespoke-hash
+          p
+            | Look up! This route has been named with a
+            em "data-bespoke-hash"
+            | attribute.
+        section.emphatic-text(data-bespoke-backdrop="emphatic")
+          h2 Emphatic Slide!
+          h3
+            | Powered by
+            a(href="https://github.com/markdalgleish/bespoke-backdrop") bespoke-backdrop
+        section
+          h2.bullet Just the beginning...
+          br
+          ul
+            li
+              | Edit
+              a(href="http://jade-lang.com/") Jade
+              | markup in
+              em "src/index.jade"
+            li
+              | Edit
+              a(href="http://learnboost.github.io/stylus/") Stylus
+              | styles in
+              em "src/styles/main.styl"
+            li
+              | Edit JavaScript in
+              em "src/scripts/main.js"
+          br
+          ul
+            li
+              strong Enjoy! :)
+              a(href="http://twitter.com/markdalgleish")  -@markdalgleish
+    script(src="build/build.js")
