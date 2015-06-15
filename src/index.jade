@@ -4,109 +4,129 @@ html
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
     title Windows Os
-    link(rel="icon", href="image/Windows8-50.ico")
-    link(rel="stylesheet", type="text/css", href="build/build.css")
-    link(rel="stylesheet", type="text/css", href="build/themes.css")
-  body.coverflow(style="background-image:url(foto/1.png)")
+    link(rel="icon", href="src/images/Windows8-50.ico")
+    link(rel="stylesheet" type="text/css" href="build.css")
+  body.coverflow
     #main
       article
         section
-          h2 Tutorial Install windows 8 
-          img(src="image/usb.jpg", ,="", style="width:120px;height:100px; left:0%")
+          h3
+            | KELOMPOK TEAM_IDV2
+            br
+            br
+            | NAMA ANGGOTA :
+            br
+            | Obbie Cristian
+            br
+            | Imal Zaya Harahap
+            br
+            | Kade Sukawati
+            br
+            | Dwi Herydo Gultom
+            br
+          h1 TUTORIAL INSTALL WIN 8
         section
-          h2 PERKENALAN WINDOWS 8
+          h2(style="top:10%;") PERKENALAN WINDOWS 88888
+          img#back(src="images/1638864.jpg")
         section
-          p(style="text-align:justify")
-            | Windows 8 adalah keluaran dari microsoft yang secara resmi di rilis pada tahun 2012 bersamaan
-            | dengan peluncuran komputer perdana yang menggunakan windows 8.
-            | Versi percobaan windows 8 berupa Consumer preview dan release preview.
-            | pada 26 juni 2013 microsoft merilis versi uji coba  windows 8.1
-          blockquote
-            | Sumber
-            em
-              a(href="http://id.wikipedia.org/wiki/Windows_8") Wikipedia
+          img#logosejarah(src="images/Windows8-50.png")
+          h2(style="font-size:14px; top:15%")
+            | Windows 8 adalah nama dari versi terbaru Microsoft Windows, serangkaian sistem operasi yang diproduksi oleh Microsoft untuk digunakan pada komputer pribadi, termasuk komputer rumah dan bisnis, laptop, netbook, tablet PC, server, dan PC pusat media.[4] Sistem operasi ini menggunakan mikroprosesor ARM selain mikroprosesor x86 tradisional buatan Intel dan AMD. Antarmuka penggunanya diubah agar mampu digunakan pada peralatan layar sentuh selain mouse dan keyboard, sehingga Windows 8 di desain untuk perangkat tablet sentuh.
+            | Microsoft secara resmi merilis Windows 8 pada 26 Oktober 2012 bersamaan dengan peluncuran komputer perdana yang menggunakan Windows 8.[5] Versi percobaan Windows 8 berupa Consumer Preview dan Release Preview.[6] Pada 26 Juni 2013, Microsoft merilis versi Uji Coba dari Windows 8.1 (sebelumnya dikenal sebagai Windows Blue), sebuah peningkatan untuk Windows 8, Windows 7, Windows Vista, dan Windows XP. Pada 18 Oktober 2013, Microsoft merilis Windows 8.1 sebagai pembaruan gratis untuk Windows 8.
+            br
+            br
+            | Kelebihan Windows 8 dan fitur-fitur barunya yang semakin memanjakan penggunanya.  Berikut ini seputar kelebihan dan fitur-fiturnya.
+            ol
+              li
+                | Mendukung chip ARM
+                br
+                | Windows 8 mendukung perangkat yang memakai infrastruktur chip ARM. Hal ini diharapkan memperluas jangkauan Windows 8 di arena tablet, mengingat kebanyakan tablet yang beredar saat ini memakai chip ARM.
+              li
+                | Dioptimalisasi untuk layar sentuh
+                br
+                | Windows 7 memang support layar sentuh, namun tidak optimal dari sisi desain dan kemudahan pengoperasian. Berbeda dengan Windows 8, interfacenya yang dijuluki sebagai Metro benar-benar dioptimalkan untuk sentuhan dengan wujud ala interface Windows Phone.
+        section
+          h1#cont Cont...
+          h2(style="font-size:14px; top:15%")
+            ol(start="3")
+              li
+                | Toko aplikasi Windows Store
+                br
+                | Windows 8 akan memiliki toko aplikasi sendiri yang dinamakan Windows Store. Windows Store menyediakan berbagai aplikasi yang dioptimalkan untuk Windows 8.
+              li
+                | Mendukung NFC (Near Field Communications)
+                br
+                | Windows 8 akan mendukung NFC, sebuah teknologi yang kegunaanya antara lain untuk transaksi keuangan digital. Tablet yang memakai Windows 8 pun kemungkinan besar akan otomatis menyertakan fitur ini.
+              li
+                | Waktu boot yang singkat
+                br
+                | Boot Windows 8 dalam demonya hanya berlangsung dalam 8 detik. Sebuah waktu yang jauh lebih singkat dibanding booting di Windows versi sebelumnya.
+              li
+                | Internet Explorer 10
+                br
+                | Internet Explorer 10 dijanjikan membawa perubahan besar ketimbang versi IE terdahulu. Browser ini diklaim sangat ramah digunakan baik dalam tablet maupun PC.
+              li
+                | Sekuriti lebih baik
+                br
+                | Windows 8 dikatakan akan memiliki fitur sekuriti lebih baik untuk menghadang serangan cyber. Di antaranya fitur Windows Defender lebih ditingkatkan kemampuannya di OS ini.
+              li
+                | Windows 8 tidak membutuhkan upgrade PC
+                br
+                | Microsoft menyatakan komputer yang bisa menjalankan Windows 7 dapat pula menjalankan Windows 8 sehingga user tak perlu upgrade PC. Menurut Microsoft, prosesor Intel Atom dan RAM 1 GB sudah cukup untuk menjalankan OS ini
         section
           h2(style="top:5%;") Cara Menginstall
-          h2(style="top:10%; font-size:12px")
+          h2(style="top:10%; font-size:14px;")
             | Catatan: Harap Backup dahulu isi USB flashdisk kita, karena kita akan memformatnya        kemudian.
             br
             | Langkah-Langkah menginstall Windows 8 Melalui USB Flashdisk:
-            h2(style="top:20%; font-size:12px")
-              ol
-                li
-                  | Colokkan USB flashdisk kita ke komputer dan backup (simpan) dahulu file2 didalamnya jika ada ditempat lain.
-                li
-                  | Klik Start -&#62; All Programs -&#62; Accessories klik kanan pada Command Prompt dan pilih Run as administrator untuk menjalankan Command Prompt dengan hak akses Administrator. Klik Yes kalo nongol jendela UAC (User Account Control.
-                li Pada Command Prompt, ketikkan perintah DISKPART dan tekan Enter
-                li
-                  | Sekarang, ketik perintah LIST DISK dan tekan Enter, untuk melihat nomor disk USB flashdisk kita yang mana, dalam tutorrial berikut USB flashdisk saya ada dinomor 1. Periksa ukuran USB flashdisk berikutnya (lih gambar) untuk memastikan nomor USB flashdisk yang akan kita pakai.
-                li
-                  | Sekarang ketikkan perintah berikut satu persatu diikuti dengan menekan tombol Enter
-                ul
-                  li Select DISK 1
-                  li Clean
-                  li Create Partition Primary
-                  li Active
-                  li  Format Fs=NTFS
-                  li Assign
-                  li Exit
+          h2.bullet(style="top:20%; font-size:14px;text-align:left;font-style:calibri;")
+            li
+              | Colokkan USB flashdisk kita ke komputer dan backup (simpan) dahulu file2 didalamnya jika ada ditempat lain.
+            li
+              | Klik Start -&#62; All Programs -&#62; Accessories klik kanan pada Command Prompt dan pilih Run as administrator untuk menjalankan Command Prompt dengan hak akses Administrator. Klik Yes kalo nongol jendela UAC (User Account Control.
+            li Pada Command Prompt, ketikkan perintah DISKPART dan tekan Enter
+            li
+              | Sekarang, ketik perintah LIST DISK dan tekan Enter, untuk melihat nomor disk USB flashdisk kita yang mana, dalam tutorrial berikut USB flashdisk saya ada dinomor 1. Periksa ukuran USB flashdisk berikutnya (lih gambar) untuk memastikan nomor USB flashdisk yang akan kita pakai.
+              br
+              | Sekarang ketikkan perintah berikut satu persatu diikuti dengan menekan tombol Enter
+              pre(style="font-size:12px;").
+                \n\n\n\n                              Select DISK 1
+                                              Clean
+                                              Create Partition Primary
+                                              Active
+                                              Format Fs=NTFS
+                                              Assign
+                                              Exit                                                                
         section
-          h2 Responsive Slides
-          h3
-            | Powered by
-            a(href="https://github.com/markdalgleish/bespoke-scale") bespoke-scale
+          h2.bullet(style="top:3%; font-size:14px;text-align:left;font-style:calibri;")
+            li
+              | Sekarang kita telah membuat USB flashdisk kita bisa booting, Jangan tutup dulu jendela Command prompt nya, cukup kecilin, dan ikuti dulu langkah selanjutnya.
+            li
+              | Sekarang Mount lah file ISO windows 8 kita dengan memakai program Virtual CD/DVD seperti Virtual Clone Drive (gratis) atau Ultra ISO dll, jika ada DVD nya, masukin ke DVD-ROM DVD nya.
+              | Setelah kita mount file ISO nya, catat nama Drivenya (Misal Drive G:), karena kita akan mengcopy isi nya ke USB flashdisk kita nanti.
+            li
+              | Sekarang kita kembali ke jendela Command Prompt tadi dan jalankanlah perintah berikut:
+              | G: CD BOOT lalu tekan Enter (dimana G: adalah virtual drive yg telah kita bikin (mount))
+              br
+              img(src="images/6.jpg", style="width:200px;heigh:200px;")
+            li
+              | Ketik : BOOTSECT.EXE /NT60 J: ( dimana J: adalah nama drive USB flashdisk kita, dapat kita cek di my computer atau windows explorer)
+            li
+              img(src="images/7.jpg", style="width:200px;heigh:200px;")
+              br
+              img(src="images/7.1.jpg", style="width:400px;heigh:500px;")
         section
-          h2 Bullet List
-          h3.bullet
-            | Powered by
-            a(href="https://github.com/markdalgleish/bespoke-bullets") bespoke-bullets
-          ul
-            li Bullet 1
-            li Bullet 2
-            li Bullet 3
+          h2.bullet(style="top:3%; font-size:14px;text-align:left;font-style:calibri;")
+            li
+              | Sekarang bukalah windows explorer dan copykan semua isi file ISO yang telah kita mount tadi dengan memakai program Virtual CD atau ultra ISO dll, copy kan semua isinya ke dalam USB flashdisk kita. Jika memakai CD/DVD tinggal copykan saja semuanya kedalam usb flashdisk kita.
+              br
+              br
+              img(src="images/8.jpg", style="width:400px;heigh:500px;")
         section
-          h2 Syntax Highlighting
-          h3
-            | Powered by
-            a(href="http://twitter.com/LeaVerou") Lea Verou
-            | "s
-            a(href="https://github.com/LeaVerou/prism") Prism
-          pre.
-            
-        section(data-bespoke-hash="named-route")
-          h2 Named Route
-          h3
-            | Powered by
-            a(href="https://github.com/markdalgleish/bespoke-hash") bespoke-hash
-          p
-            | Look up! This route has been named with a
-            em "data-bespoke-hash"
-            | attribute.
+        section(data-bespoke-hash="catchy-title")
         section.emphatic-text(data-bespoke-backdrop="emphatic")
-          h2 Emphatic Slide!
-          h3
-            | Powered by
-            a(href="https://github.com/markdalgleish/bespoke-backdrop") bespoke-backdrop
         section
-          h2.bullet Just the beginning...
-          br
-          ul
-            li
-              | Edit
-              a(href="http://jade-lang.com/") Jade
-              | markup in
-              em "src/index.jade"
-            li
-              | Edit
-              a(href="http://learnboost.github.io/stylus/") Stylus
-              | styles in
-              em "src/styles/main.styl"
-            li
-              | Edit JavaScript in
-              em "src/scripts/main.js"
-          br
-          ul
-            li
-              strong Enjoy! :)
-              a(href="http://twitter.com/markdalgleish")  -@markdalgleish
-    script(src="build/build.js")
+script(src="bespoke/bespoke.js")
+script(src="demo/demo.js")
+
+
