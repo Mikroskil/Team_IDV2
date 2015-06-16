@@ -58,3 +58,7 @@ Note : Situasi ketika kita sudah mempunyai repository di github
 
 - jika diminta password dan username masukan password dan username anda yang di github. 
 
+- Jika ingin pindah branch
+	$ git checkout <nama branch>
+  ex:
+	$ git checkout develop
